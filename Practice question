@@ -1,6 +1,6 @@
-def mul(num) :
+def multiplicate(num) :
     for i in range(1,11) :
         print(num,"*",i,"=",num*i)
-num=int(input())
-mul(num)
+num=int(input("Enter a number : "))
+multiplicate(num)
 
