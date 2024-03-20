@@ -1,0 +1,16 @@
+def triangle_check(angle1,angle2,angle3) :
+        if angle1 + angle2 + angle3 == 180 :
+            return "It is a valid triangle."
+        else :
+            return "The angles are not valid and hence It is not a valid triangle."
+a=int(input("Enter 1st side: "))
+b=int(input("Enter 2nd side: "))
+c=int(input("Enter 3rd side: "))
+if a + b > c and b + c > a and c + a > b :
+        print("The Sides are Valid.")
+        angle1=int(input("Enter 1st angle: "))
+        angle2=int(input("Enter second angle: "))
+        angle3=int(input("Enter third angle: "))
+        print(triangle_check(angle1,angle2,angle3))
+else :
+        print("The Sides are not valid.")
