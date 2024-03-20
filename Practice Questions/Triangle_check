@@ -1,3 +1,6 @@
+#Conditions to be checked
+# sum of angles should be 180
+# sum of lengths of any two sides is greater than third side
 def triangle_check(angle1,angle2,angle3) :
         if angle1 + angle2 + angle3 == 180 :
             return "It is a valid triangle."
