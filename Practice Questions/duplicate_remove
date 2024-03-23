@@ -1,0 +1,25 @@
+#The below program eliminates duplicate items in a list using sets
+def duplicate_remove() :
+    set1=set(li)
+    list1=list(set1)
+    return list1
+n=int(input("Enter the number of elements in the list: "))
+li=[]
+for i in range(n):
+    element=int(input("Enter the element: "))
+    li.append(element)
+print(duplicate_remove())
+---------------------------------------------------------------------------
+#Here is an example without using sets
+def duplicate_remove() :
+    unique_list=[]
+    for i in li:
+        if i not in unique_list :
+            unique_list.append(i)
+    return unique_list
+n=int(input("Enter the number of elements in the list: "))
+li=[]
+for i in range(n):
+    element=int(input("Enter the element: "))
+    li.append(element)
+print(duplicate_remove())
